@@ -1,5 +1,5 @@
 import { meals } from '../constants';
-import { View, Text, Image, ScrollView } from 'react-native';
+import { View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 export default function MealSchedule() {
@@ -15,7 +15,7 @@ export default function MealSchedule() {
         contentContainerStyle={{ alignItems: 'center' }}
       >
         {meals.map((item, index) => (
-          <View key={index} className="justify-center items-center mr-3">
+          <TouchableOpacity key={index} className="justify-center items-center mr-3">
             <Image
               source={item.image}
               style={{ width: wp(16), height: hp(8) }}
@@ -23,7 +23,7 @@ export default function MealSchedule() {
             />
             <Text className="mt-2 text-sm font-semibold text-slate-800">{item.name}</Text>
             <Text className="text-[11px] font-normal text-slate-600">{item.time}</Text>
-          </View>
+          </TouchableOpacity>
         ))}
       </ScrollView>
     </View>

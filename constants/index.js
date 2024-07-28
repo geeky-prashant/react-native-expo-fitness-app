@@ -6,17 +6,6 @@ export const sliderImages = [
   require("../assets/images/slide5.png"),
 ]
 
-export const exercises = [
-  require("../assets/images/exercise1.png"),
-  require("../assets/images/exercise2.png"),
-  require("../assets/images/exercise3.png"),
-  require("../assets/images/exercise4.png"),
-  require("../assets/images/exercise5.png"),
-  require("../assets/images/exercise6.png"),
-  require("../assets/images/exercise7.png"),
-  require("../assets/images/exercise8.png"),
-];
-
 export const meals = [
   {
     image: require("../assets/images/meal1.png"),
@@ -58,4 +47,47 @@ export const meals = [
     name: "Oatmeal",
     time: "08:10pm"
   },
+];
+
+export const exercises = [
+  {
+    name: "back",
+    image: require("../assets/images/back.png"),
+  },
+  {
+    name: "cardio",
+    image: require("../assets/images/cardio.png"),
+  },
+  {
+    name: "lower arms",
+    image: require("../assets/images/lowerArms.png"),
+  },
+  {
+    name: "lower legs",
+    image: require("../assets/images/lowerLegs.png"),
+  },
+  {
+    name: "chest",
+    image: require("../assets/images/chest.png"),
+  },
+  {
+    name: "neck",
+    image: require("../assets/images/neck.png"),
+  },
+  {
+    name: "shoulders",
+    image: require("../assets/images/shoulders.png"),
+  },
+  {
+    name: "upper arms",
+    image: require("../assets/images/upperArms.png"),
+  },
+  {
+    name: "upper legs",
+    image: require("../assets/images/upperLegs.png"),
+  },
+  {
+    name: "waist",
+    image: require("../assets/images/waist.png"),
+  }
 ];

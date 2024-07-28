@@ -5,8 +5,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 // Components 
 import Header from '../components/header';
 import Progress from '../components/progress';
-import Exercises from '../components/exercises';
 import MealSchedule from '../components/meal-schedule';
+import BodyParts from '../components/body-parts';
 
 export default function Home() {
   return (
@@ -25,9 +25,8 @@ export default function Home() {
         {/* Meal Schedule  */}
         <MealSchedule />
 
-        {/* Exercises  */}
-        <Exercises />
-
+        {/* Body Parts  */}
+        <BodyParts />
       </ScrollView>
     </SafeAreaView>
   )
